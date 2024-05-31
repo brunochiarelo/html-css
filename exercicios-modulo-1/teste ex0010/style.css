@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(255, 254, 189);
+}
+h1 {
+    color: chocolate;
+    background-color: rgba(250, 175, 148, 0.055);
+}
+h2 {
+color: chocolate;
+}
+ 

@@ -1,0 +1,64 @@
+@charset "UTF-8"
+
+*{
+    height: 100%;
+}
+body{
+    background-color: rgba(0, 0, 255, 0.686);
+    
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+div{
+    background-color: black;
+    height: 20px;
+    color: white;
+    text-align: left;
+    
+}
+
+div:hover{
+    color: red;
+}
+
+div > ul {
+    display: none;
+}
+
+div:hover > ul {
+    display: block;
+    color: red;
+    background-color: black;
+}
+
+h1{
+    font-size: 5em;
+}
+
+main{
+    background-color: white;
+    padding: 10px;
+    margin: auto;
+    border-radius: 50px;
+
+}
+
+.h2{
+    font-weight: bolder;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.dd1{
+    display: inline-block;
+    background-color: blue;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    color: blue;
+}
+
+div:hover{
+    background-color: black;
+}
