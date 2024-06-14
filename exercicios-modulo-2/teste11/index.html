@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Iframe</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        html, body {
+            background-color: black;
+            
+        }
+
+        main{
+            background-image: url('imagens/fundo-madeira.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 100vh;
+            width: 100vw;
+            position: relative;
+        }
+
+        section.celular {
+            position: absolute;
+            background-image: url('imagens/frame-iphone.png');
+            background-repeat: no-repeat;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 626px;
+            width: 310px;
+        }
+        
+        #frame{
+            position: relative;
+            top: 80px;
+            left: 22px;
+            width: 267px;
+            height: 470px;
+        }
+
+        section.botao > a > img {
+            width: 50px;
+            border-radius: 50%;
+            display: block;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <section class="celular">
+            <iframe src="home.html" frameborder="0" name="frame" id="frame">
+                infelizmente seu navegador não carrega este conteudo
+            </iframe>
+
+        </section>
+        <section class="botao">
+            <a href="facebook.html" target="frame"><img src="imagens/logo-facebook.jpg" alt="facebook"></a>
+            <a href="github.html" target="frame"><img src="imagens/logo-github.jpg" alt="github"></a>
+            <a href="home.html" target="frame"><img src="imagens/logo-home.jpg" alt=""></a>
+            <a href="intagram.html" target="frame"><img src="imagens/logo-instagram.jpg" alt="instagram"></a>
+            <a href="twitter.html" target="frame"><img src="imagens/logo-twitter.jpg" alt="twitter"></a>
+            <a href="youtube.html" target="frame"><img src="imagens/logo-youtube.jpg" alt="youtube"></a>
+
+        </section>
+    </main>
+    
+</body>
+</html>
