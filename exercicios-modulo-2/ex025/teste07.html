@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            background-color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            
+
+        }
+
+        main {
+            background-color: white;
+            position: relative;
+            height: 98vh;
+            width: 96vw;
+        }
+
+        section {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 2px solid rgba(34, 125, 125, 0.434);
+            border-radius: 5px;
+            height: 400px;
+            width: 400px;
+        
+        }
+
+        section > h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin: 20px;
+            color: rgba(34, 125, 125, 0.861);
+            text-shadow: 1px 1px 2px black;
+        }
+
+       p {
+        margin-left: 20px;
+       }
+       
+       .p1 {
+        color: rgba(22, 83, 83, 0.979);
+        font-weight: 600;
+       }
+
+    .botao1 {
+        margin-left: 20px;
+        color: rgba(22, 83, 83, 0.979);
+        font-weight: 600;
+    }
+       
+    .b2 {
+        padding: 0px;
+        width: 350px;
+        height: 50px;
+        border-radius: 10px;
+        background-color: rgba(34, 125, 125, 0.861);
+        border: none;
+
+    }
+
+    div {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .b3 {
+        color: rgba(0, 0, 0, 0.523);
+        background-color: rgba(34, 125, 125, 0.178);
+        margin-left: 0px;
+        margin-top: 40px;
+        height: 42px;
+        border-radius: 0px 0px 5px 5px;
+        text-align: right;
+        padding-top: 20px;
+        
+    }
+
+   
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Login</h1>
+            <hr>
+            <form action="cadastro.php" method="post" autocomplete="off">
+
+                <p>
+                    <label class="p1" for="iemail">Seu e-mail</label>
+                    <input type="email" name="email" id="iemail" size="45" required placeholder="Digite se E-mail">
+                </p>
+
+                <p>
+                    <label class="p1" for="isen">Sua senha</label>
+                    <input class="q1" type="password" name="sen" id="isen" size="45" required placeholder="ex: 1,2,3,4">
+                </p>
+
+                <input class="botao1" type="checkbox" name="log" id="ilog"><label for="ilog">Manter-me logado</label>
+
+                <p>
+                    <input class="b2" type="submit" value="Logar">
+                </p>
+            </form>
+            <div>
+                <p class="b3">
+                    Ainda não tem conta?
+                    <input type="button" value="Cadastre-se">
+                </p>
+            </div>
+
+        </section>
+    </main>
+    
+</body>
+</html>
