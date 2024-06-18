@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required placeholder="Digite seu Nome">
+            </p>
+            <p>
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail" required placeholder="Digite seu E-mail">
+            </p>
+            <p>
+                <label for="ifone">Telefone:</label>
+                <input type="tel" name="fone" id="ifone" required placeholder="Digite seu Telefone">
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <h1>Teste localização com iframe</h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d478058.3460713101!2d-47.67775425592255!3d-20.594965095107497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b0a61af61f6833%3A0xf8937fe5d4b0f6dd!2sFranca%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1718734608096!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <h2>teste 2</h2>
+    <iframe src="https://receitas.globo.com/" frameborder="1"></iframe>
+</body>
+</html>
