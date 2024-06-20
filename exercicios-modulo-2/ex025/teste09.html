@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTE</title>
+</head>
+<body>
+    <form action="cadastro.php">
+
+        <p>
+         <label for="iest">Estados:</label>
+         <select name="est" id="iest">
+
+            <optgroup label="Região Sudeste">
+                <option value="SP">São Paulo</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="RJ">Rio de Janeiro</option>
+            </optgroup>
+
+            <optgroup label="Região Suldeste">
+                <option value="SC">Santa Catarina</option>
+            </optgroup>
+
+         </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="lista" placeholder="Digite">
+
+            <datalist id="lista">
+                <option value="ADM">Administrador</option>
+                <option value="DEV">Desenvolvedor</option>
+            </datalist>
+        </p>
+    </form>
+</body>
+</html>
