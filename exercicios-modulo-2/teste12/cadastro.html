@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        body {
+            background-color: black;
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        main {
+            position: relative;
+            background-color: black;
+            height: 100vh;
+            width: 100vw;
+            
+            
+        }
+
+        section {
+            background-color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 500px;
+            width: 400px;
+            border-radius: 20px;
+
+        }
+
+        main > section > h1 {
+            background-color: rgba(0, 0, 255, 0.454);
+            text-align: center;
+            text-shadow: 1px 1px 3px black;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 3em;
+            padding: 20px;
+            margin-top: 0px;
+            border-radius: 20px 20px 0px 0px;
+            box-shadow: 1px 1px 3px black;
+        }
+
+        fieldset{
+            margin-top: -15px;
+            margin-bottom: -10px;
+        }
+    
+
+        .dados {
+            font-weight: bolder;
+            font-size: 1.3em;
+        }
+
+        .bt {
+            text-align: center;
+            padding-top: -2010px;
+        }
+
+        .buton {
+            height: 30px;
+            width: 100px;
+            box-shadow: 1px 1px 3px black;
+            background-color: blueviolet;
+            color: white;
+            font-weight: bolder;
+            border-radius: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>CADASTRO</h1>
+            <form action="index.html" method="get" autocomplete="off">
+                <fieldset>
+                    <legend>Cadastro</legend>
+                    <p>
+                        <label for="inome" class="dados">Nome:</label>
+                        <input type="text" name="nome" id="inome" required size="35">
+                    </p>
+                    <p>
+                        <label for="isobre" class="dados">Sobrenome:</label>
+                        <input type="text" name="sobre " id="isobre" required size="27">
+                    </p>
+                    <p>
+                        <label for="idate" class="dados">Data de Nascimento:</label>
+                        <input type="date" name="gate" id="idate" required> 
+                    </p>
+                    <p>
+                        <label for="ifon" class="dados">Telefone:</label>
+                        <input type="tel" name="fon" id="ifon" required>
+                    </p>
+                    <p>
+                        <label for="iemail" class="dados">E-mail:</label>
+                        <input type="email" name="email" id="iemail" required size="34">
+                    </p>
+                    <p>
+                        <label for="isen" class="dados">Senha:</label>
+                        <input type="password" name="sen" id="isen" required size="24" minlength="6">
+                    </p>
+                    <p>
+                        <input type="radio" name="sexo" id="isex"><label for="isex">Masculino</label>
+                        <input type="radio" name="sexo" id="isex"><label for="isex">Feminino</label>
+                    </p>
+                    
+                </fieldset>
+                <p class="bt">
+                    <input type="submit" value="Cadastrar" class="buton">
+                    <input type="reset" value="Limpar" class="buton">
+                </p>
+            </form>
+
+        </section>
+    </main>
+    
+</body>
+</html>

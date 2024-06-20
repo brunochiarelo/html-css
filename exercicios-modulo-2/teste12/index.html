@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+   
+
+        body {
+            background-color: black;
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        main {
+            position: relative;
+            background-color: black;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        section {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            height: 460px;
+            min-width: 400px;
+            border-radius: 20px;
+            box-shadow: 1px 1px 5px white;
+            border: 1px solid rgba(0, 0, 255, 0.454);
+            
+        }
+
+        section > h1 {
+            background-color: rgba(0, 0, 255, 0.454);
+            text-align: center;
+            text-shadow: 1px 1px 3px black;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 3em;
+            margin: 30px;
+            padding-top: 10px;
+            padding-bottom: 20px;
+            margin-bottom: -10px;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 0px;
+            border-radius: 18px 18px 0px 0px;
+            box-shadow: 1px 1px 3px black;
+
+        }
+
+        fieldset {
+            padding: 30px;
+            margin: 30px;
+        }
+
+        .l1 {
+            font-weight: bolder;
+            font-size: 1.3em;
+
+        }
+
+        .l2 {
+            font-weight: bolder;
+            font-size: 1.1em;
+            color: rgba(0, 0, 0, 0.571);
+
+        }
+
+        .buton {
+            text-align: center;
+        }
+
+        .buton1 {
+            height: 30px;
+            width: 100px;
+            font-weight: bolder;
+            border: 2px solid rgba(0, 0, 255, 0.454);
+            box-shadow: 1px 1px 3px black;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .buton1:hover {
+            background-color: rgba(137, 43, 226, 0.734);
+            color: white;
+            font-weight: bolder;
+            text-shadow: 1px 1px 3px white;
+        }
+
+        div {
+            background-color: rgba(0, 0, 255, 0.454);
+            color: rgba(0, 0, 0, 0.72);
+            font-weight: bolder;
+            font-size: 1.1em;
+            text-align: right;
+            padding: 17px;
+            margin-bottom: 2px;
+            border-radius: 0px 0px 18px 18px;
+        }
+
+        .cad {
+            background-color: white;
+            border: 2px solid white;
+            padding: 4px;
+            border-radius: 10px;
+        }
+
+        .cad:hover {
+            background-color: black;
+            color: white
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>LOGIN</h1>
+            
+            <form action="entrar.html" method="get">
+
+                <fieldset>
+                    <legend>Login</legend>
+                    <p>
+                        <label for="iuser" class="l1">Usuário:</label>
+                        <input type="text" name="user" id="iuser" size="25" placeholder="E-mail" required>
+                    </p>
+                    <p>
+                        <label for="isen" class="l1">Senha:</label>
+                        <input type="password" name="sen" id="isen" size="27" placeholder="Digite sua Senha" required minlength="6">
+                    </p>
+                </fieldset>
+                <p>
+                    <input type="checkbox" name="conect" id="iconect"><label for="iconect" class="l2">Manter Conectado</label>
+                </p>
+                <p class="buton">
+                    <input type="submit" value="Entrar" class="buton1">
+                    <input type="reset" value="Limpar" class="buton1">
+                </p>
+            </form>
+            <div>
+                Faça Seu Cadastro Aqui <a href="cadastro.html" class="cad">Cadastrar</a>
+            </div>
+
+        </section>
+    </main>
+    
+</body>
+</html>
