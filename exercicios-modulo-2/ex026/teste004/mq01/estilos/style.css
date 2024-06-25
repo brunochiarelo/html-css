@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+/*mobile fiste  phonee */  
+
+
+
+    
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    background-image: url('../imagens/back-phone.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    
+}
+
+header {
+    background-color: rgba(169, 169, 169, 0.479);
+    margin-top: 10px;
+}
+
+h1, img {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-shadow: 3px 3px 0px black;
+    padding: 15px;
+    text-align: center;
+    margin: auto;
+    display: block;
+    
+}
+
+
+
+#pc {display: none;}
+#tablet {display: none;}
+#print {display: none;}
+#phone {display: block;}
+#tv {display: none;}
+
