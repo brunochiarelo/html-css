@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Fixa a barra no topo da janela */
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Z-index alto para garantir que fique acima do conteúdo */
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .content {
+    padding-top: 80px; /* Espaço para evitar que o conteúdo fique oculto sob a barra */
+    /* Adicione mais estilos conforme necessário */
+  }
